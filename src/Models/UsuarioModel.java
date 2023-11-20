@@ -1,36 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Models;
 
-/**
- *
- * @author Adm
- */
 public class UsuarioModel {
+
     private int idUsuario;
     private String nmUsuario;
     private String dsCEP;
     private String dsBairro;
     private String dsCidade;
     private String dsRua;
-    private int idCategoriaUsuario;
+    private String nrDoc;
+    private String nrTelefone;
+    private String dsEmail;
+    private String dsSenha;
     private int idSexualidade;
+    private boolean flAdmin;
 
-    // Construtor
-    public UsuarioModel(int idUsuario, String nmUsuario, String dsCEP, String dsBairro, String dsCidade, String dsRua, int idCategoriaUsuario, int idSexualidade) {
-        this.idUsuario = idUsuario;
-        this.nmUsuario = nmUsuario;
-        this.dsCEP = dsCEP;
-        this.dsBairro = dsBairro;
-        this.dsCidade = dsCidade;
-        this.dsRua = dsRua;
-        this.idCategoriaUsuario = idCategoriaUsuario;
-        this.idSexualidade = idSexualidade;
+    // Construtor vazio
+    public UsuarioModel() {
+        // Pode ser usado para criar uma instância sem fornecer valores iniciais.
     }
 
-    // Métodos getters e setters (ou apenas getters se não for necessário alterar os valores diretamente)
+    // Métodos getters
+
     public int getIdUsuario() {
         return idUsuario;
     }
@@ -55,12 +46,76 @@ public class UsuarioModel {
         return dsRua;
     }
 
-    public int getIdCategoriaUsuario() {
-        return idCategoriaUsuario;
+    public String getNrDoc() {
+        return nrDoc;
+    }
+
+    public String getNrTelefone() {
+        return nrTelefone;
+    }
+
+    public String getDsEmail() {
+        return dsEmail;
+    }
+
+    public String getDsSenha() {
+        return dsSenha;
     }
 
     public int getIdSexualidade() {
         return idSexualidade;
+    }
+
+    public boolean isFlAdmin() {
+        return flAdmin;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public void setNmUsuario(String nmUsuario) {
+        this.nmUsuario = nmUsuario;
+    }
+
+    public void setDsCEP(String dsCEP) {
+        this.dsCEP = dsCEP;
+    }
+
+    public void setDsBairro(String dsBairro) {
+        this.dsBairro = dsBairro;
+    }
+
+    public void setDsCidade(String dsCidade) {
+        this.dsCidade = dsCidade;
+    }
+
+    public void setDsRua(String dsRua) {
+        this.dsRua = dsRua;
+    }
+
+    public void setNrDoc(String nrDoc) {
+        this.nrDoc = nrDoc;
+    }
+
+    public void setNrTelefone(String nrTelefone) {
+        this.nrTelefone = nrTelefone;
+    }
+
+    public void setDsEmail(String dsEmail) {
+        this.dsEmail = dsEmail;
+    }
+
+    public void setDsSenha(String dsSenha) {
+        this.dsSenha = dsSenha;
+    }
+
+    public void setIdSexualidade(int idSexualidade) {
+        this.idSexualidade = idSexualidade;
+    }
+
+    public void setFlAdmin(boolean flAdmin) {
+        this.flAdmin = flAdmin;
     }
 }
 
